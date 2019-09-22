@@ -2,7 +2,7 @@
 
 ## Introduction
 The MOAC distributed identity system aims to provide a secure, robust and flexible implementation of the DID and Verifiable Claims specifications published by the W3C and the Decentralised Identity Foundation. It’s core technologies are the MOAC blockchain.
-## MOAC
+### MOAC
 MOAC is a public permissionless blockchain and smart contract execution environment. The Virtual Machine system provides certainty and security about code execution by being based upon a public blockchain.
 ## Overview
 The MOAC DID method uses MOAC blockchain as a decentralized storage layer for DID Documents. A deployed smart contract provides a mapping from a DID to an MOAC blockchain hash address of the corrosponding DID Document. This enables DID Documents on MOAC blockchain to be effectively addressed via their DIDs. 
@@ -65,17 +65,15 @@ Writing to the MOAC registry mapping contract requires control over the private 
 ### Key Revocation
 As there is no centralised control of the registry contract, no party can revoke the keys of DID control of another party under the MOAC system.
 
+## Privacy and Security Considerations
 ### Key Control
 As mentioned in the Key Recovery section, the entity which controls the **private key** which anchored the DID also effectively controls the DID Document which the DID resolves to. Thus great care should be taken to ensure that the **private key** is kept private. Methods for ensuring key privacy are outside the scope of this document.
-
-### Privacy and Security Considerations
-We consider that personal information is mostly sensitive content and DID documents may be parsed by others. Therefore, care should be taken to ensure that the DID document does not contain any sensitive personal information. Personal information in the real world is not recommended for inclusion in the document. So others cannot contact someone in the real world by parsing this personal DID document. 
 
 ### DID Document Public Profile
 The DID Document anchored with the registry contract can contain any content, though it is recommended that it conforms to the [W3C DID Document Specificaiton](https://w3c-ccg.github.io/did-spec/#did-documents). As registered DIDs can be resolved by anyone, care should be taken to only update the registry to resolve to DID Documents which DO NOT expose any sensitive personal information, or information which you may not wish to be public.
 
 ### Sensitive Personal Information
-
+We consider that personal information is mostly sensitive content and DID documents may be parsed by others. Therefore, care should be taken to ensure that the DID document does not contain any sensitive personal information. Personal information in the real world is not recommended for inclusion in the document. So others cannot contact someone in the real world by parsing this personal DID document. 
 
 ************** **TODO** *****************
 ## References
