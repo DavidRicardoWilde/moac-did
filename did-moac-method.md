@@ -73,7 +73,7 @@ Example:
   "@context": "https://w3id.org/did/v1",
   "jsonrpc": "2.0",
   "method": "mc_accounts",
-  "result": [2f2b37c890824242cb9b0fe5614fa2221b79901e,(other addresses belong yours)]
+  "result": [0x2f2b37c890824242cb9b0fe5614fa2221b79901e,(other addresses belong yours)]
 }
 ```
 Example:
