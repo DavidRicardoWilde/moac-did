@@ -39,7 +39,7 @@ The hash from step 3 is your DID.
 ```jsonld
 {
   "@context": "https://w3id.org/did/v1",
-  "id": "did:mc:2f2b37c890824242cb9b0fe5614fa2221b79901e",
+  "id": "did:moacc:2f2b37c890824242cb9b0fe5614fa2221b79901e",
   "publicKey": [{
     "id": "did:moac:2f2b37c890824242cb9b0fe5614fa2221b79901e",
     "type": "Secp256k",
